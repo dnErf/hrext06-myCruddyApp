@@ -31,10 +31,10 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 > (^) donotes that it can be expanded or add some feature on top of it
 
 Story #1
-- [ ] visualize the data thru creating a data.json (^)
+- [x] visualize the data thru creating a data.json (^)
 - [ ] implement SCAM
-    - [ ] create model function that retrieves data from localStorage
-    - [ ] app global state declaration (isReady,Updated)
+    - [x] create model function that retrieves data from localStorage
+    - [x] app global state declaration (isReady,Updated)
     - [ ] generate action thru what we can do on the data (this is what scam is really about)
     - [ ] make an observer (^)
     - [ ] encasulate our form and dispatch the action controlled model
