@@ -20,5 +20,9 @@ $(document).ready(function(){
 
   // while everything is fine on the code above we just need something more ...
 
+  var $container = $('.container')
+
+  $container
+    .append(Content.view)
 
 });

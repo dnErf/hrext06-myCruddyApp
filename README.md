@@ -36,7 +36,7 @@ Story #1
     - [x] create model function that retrieves data from localStorage
     - [x] app global state declaration (isReady,Updated)
     - [x] generate action thru what we can do on the data (this is what scam is really about)
-    - [ ] encasulate our form and dispatch the generated action controlled model
+    - [x] encasulate our form and dispatch the generated action controlled model
     - [ ] make an observer (^)
     
 
