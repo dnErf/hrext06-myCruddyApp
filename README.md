@@ -29,6 +29,7 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 
 ### Next Sprints
 > (^) donotes that it can be expanded or add some feature on top of it
+
 > [ ActualPoints / EstimatedPoints ]
 
 #### Story #1 - ACM - 2/2 
@@ -41,13 +42,15 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
     - [ ] make an observer (^)
     
 
-#### Story #2 - framed - 0/2
-- [ ] reset style
-- [ ] get the font right - style and size
-- [ ] buttonss!!! to make pressing things fun 
-- [ ] seperated by 2 panels menu and content
-    - [ ] content has 2 section : controls and list
-    - [ ] media queries digout fresh from the grave of spectre css
+#### Story #2 - framed - 1/2
+- [x] reset style
+- [x] get the font right - style and size
+    - [x] [Noto Sans](https://fonts.google.com/specimen/Noto+Sans?selection.family=Noto+Sans)
+- [x] buttonss!!! to make pressing things fun
+- [x] text
+- [x] seperated by 2 panels menu and content
+    - [x] content has 2 section : controls and list
+    - [ ] media queries digout fresh from spectre css (^)
 
 #### Story #3 - something something - 0/4
 - [ ] something need to happen . so what's gonna happen and happening
@@ -59,10 +62,12 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 #### Story #4 - the observers are comming - 0/4
 - [ ] colors
 - [ ] icons
+- [ ] outlines
 - [ ] panels (margins , paddings)
 - [ ] hovers
 - [ ] accordions
 
-> if something need to happen but not happening
+
+> if something need to happen but not happening.. theres only one need to be called..
 
 #### Story #5 - the oberservables! - 0/2

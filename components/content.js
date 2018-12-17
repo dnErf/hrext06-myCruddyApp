@@ -5,19 +5,23 @@ var Content = (function Component(ctrl) {
 
   let
     txtAdd = '' 
-    , $form_container = $(`<div class="-form -ctrl"></div>`)
+    , $form_container = $(`<div class="-form -ctrl ba"></div>`)
     , $form_controls = (function() {
         return ([
-          $(`<input type="text" class="-ctrl -addTxt" placeholder="enter your information" />`)
+          $(`<input type="text" class="-ctrl -add -itxt" placeholder="url..." />`)
           .keyup(function(e) {
             txtAdd = e.currentTarget.value
           }) ,
           $(`<button class="-ctrl -btn -add">Add</button>`) ,
+          $(`<input type="text" class="-ctrl -search -itxt" placeholder="search..." />`)
+          .keyup(function(e) {
+            txtAdd = e.currentTarget.value
+          }) ,
           $(`<button class="-ctrl -btn -search">Search</button>`)
         ])
       })  
     , $form_list = $(`
-        <div class="-form -dataList">nothing</div>
+        <div class="-form -list ba">nothing</div>
       `)
     
   $form_container
@@ -31,4 +35,5 @@ var Content = (function Component(ctrl) {
     fn : Component ,
     view : $content
   }
+
 }(acm))

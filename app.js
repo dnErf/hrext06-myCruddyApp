@@ -23,6 +23,8 @@ $(document).ready(function(){
   var $container = $('.container')
 
   $container
+    .append(Menu.view)
     .append(Content.view)
+    
 
 });

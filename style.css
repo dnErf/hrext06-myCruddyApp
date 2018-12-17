@@ -1,0 +1,66 @@
+* , * + * , *::before , *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.50%;
+  height: 100%;
+  font: 1.35rem 'Noto Sans', sans-serif;
+}
+
+body {
+  min-height: 100%;
+  height: 100%;
+}
+
+br {
+  clear: both;
+}
+
+.ba {
+  border: 1px solid gray;
+}
+.-btn {
+  background: white;
+  border: solid gray;
+  border-width: 1.5px;
+  border-radius: .2rem;
+  cursor: pointer;
+  padding: .35rem;
+}
+.-btn:hover {
+  opacity: .8;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  /* height: 100%; */
+  width: 100%;
+}
+
+.-form {
+  padding: .5rem;
+}
+
+.-itxt {
+  border: solid gray;
+  padding: .35rem;
+}
+
+.-list {
+  height: 100%;
+  padding: .25rem;
+}
+
+.menu {
+  height: 100%;
+  padding: 1rem;
+}
