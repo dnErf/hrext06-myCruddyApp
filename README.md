@@ -35,9 +35,10 @@ Story #1
 - [ ] implement SCAM
     - [x] create model function that retrieves data from localStorage
     - [x] app global state declaration (isReady,Updated)
-    - [ ] generate action thru what we can do on the data (this is what scam is really about)
+    - [x] generate action thru what we can do on the data (this is what scam is really about)
+    - [ ] encasulate our form and dispatch the generated action controlled model
     - [ ] make an observer (^)
-    - [ ] encasulate our form and dispatch the action controlled model
+    
 
 Story #2
 - [ ] styled like slack
