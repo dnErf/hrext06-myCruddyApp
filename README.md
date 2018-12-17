@@ -22,7 +22,7 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 
 ### Main Feature
 - [x] This App is about making bookmarks, todo list and notes
-- [ ] Setup a SCAM (State Control Action Model) // ( We have MVC FLUX etc. so why not name one for this proj. Its just a function anyway. )
+- [x] Setup a SCAM (State Control Action Model) // ( We have MVC FLUX etc. so why not name one for this proj. Its just a function anyway. )
 
 ### Optional Feature
 - [ ] Hosting it on repl.it (html,css, js)
@@ -32,7 +32,7 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 
 > [ ActualPoints / EstimatedPoints ]
 
-#### Story #1 - ACM - 2/2 
+#### Story #1 - scammed - 2/2 
 - [x] visualize the data thru creating a data.json (^)
 - [x] implement SCAM
     - [x] create model function that retrieves data from localStorage
@@ -52,12 +52,13 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
     - [x] content has 2 section : controls and list
     - [ ] media queries digout fresh from spectre css (^)
 
-#### Story #3 - something something - 0/4
-- [ ] something need to happen . so what's gonna happen and happening
-- [ ] adds
-- [ ] inline remove
-- [ ] clear
+#### Story #3 - something something - 1/4
+- [x] something need to happen . so what's gonna happen and happening
+- [x] adds
+- [x] inline remove
+- [x] clear
 - [ ] edit in , text out
+- [x] show list to display
 
 #### Story #4 - the observers are comming - 0/4
 - [ ] colors
@@ -67,6 +68,9 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 - [ ] hovers
 - [ ] accordions
 
+#### Side Story 1
+- [ ] edit in , text out
+- [ ] accordions 
 
 > if something need to happen but not happening.. theres only one need to be called..
 
