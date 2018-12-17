@@ -29,6 +29,7 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 
 ### Next Sprints
 > (^) donotes that it can be expanded or add some feature on top of it
+
 Story #1
 - [ ] visualize the data thru creating a data.json (^)
 - [ ] implement SCAM
