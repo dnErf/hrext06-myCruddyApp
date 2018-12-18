@@ -7,12 +7,6 @@ var Folders = function() {
 var State = (function() {
   // app global state
   // toggle that can be use if the app is busy
-  // let abc = function() {
-  //   let status = false
-  //   return function(state) {
-  //     return state !== undefined ? status = state : status
-  //   }
-  // }
   let abc = s()
   return {
     isReady : true ,

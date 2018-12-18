@@ -1,54 +1,58 @@
 var acm = (function(data,state) {
   // receives the data and state then formulate the action that we will dispatch
   const model = data()
-  let stringe = ''
+  let 
+    stringe = ''
+    , updateLocalStorage = function() {
+      stringe = JSON.stringify(model)
+      localStorage.setItem('H06',stringe)
+    }
 
   return {
     model : model['hrext'] ,
     state : state ,
     add (url) {
       model['hrext'].bookmarks.push(url)
-      stringe = JSON.stringify(model)
-      localStorage.setItem('H06',stringe)
-      
+      updateLocalStorage()
+      state.appBusy(true)
     } ,
     clear () {
-      console.log(model['hrext'].bookmarks)
       model['hrext'].bookmarks = []
-      stringe = JSON.stringify(model)
-      localStorage.setItem('H06',stringe)
+      updateLocalStorage()
     } ,
     remove (idx) {
       model['hrext'].bookmarks = model['hrext'].bookmarks.filter((_,i)=>{
         return (!i === idx)
       })
-      stringe = JSON.stringify(model)
-      localStorage.setItem('H06', stringe)
+      updateLocalStorage()
     } ,
     edit (idx, desc) {
       model['hrext'].bookmarks[idx].description = desc
-      stringe = JSON.stringify(model)
-      localStorage.setItem('H06', stringe)
+      updateLocalStorage()
     } ,
+    test() {
+      state.appBusy(true)
+    }
   }
 }(Folders,State))
 
 var observer = (function Observer(c) {
   const observee = {}
+  c.state.appBusy.map((v) => {
+    if (v) {
+      for (let obi in observee) {
+        
+        // console.log(observee[obi].view.children().detach())
+        // observee[obi].view
+        observee[obi].fn(c)
+      }
+    }
+    return false
+  })
   return {
     observee ,
     subscribe (obseen) {
       observee[Object.keys(obseen)] = obseen[Object.keys(obseen)]
     } ,
-    redraw () {
-      c.state.appBusy.map((v) => {
-        if (v) {
-          for (let obi in observee) {
-            observee[obi].fn(c)
-          }
-        }
-        return false
-      })
-    }
   }
 }(acm))

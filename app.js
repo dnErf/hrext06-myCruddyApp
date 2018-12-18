@@ -22,9 +22,16 @@ $(document).ready(function(){
 
   var $container = $('.container')
 
+  var $content = $('<div class="content"></div>')
+
+  $content
+    .append(ContentForm.view)
+    .append(ContentList.view)
+
   $container
     .append(Menu.view)
-    .append(Content.view)
+    // .append(Content.view)
+    .append($content)
     
 
 });
