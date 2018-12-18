@@ -32,7 +32,7 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 
 > Story Points [ ActualPoints / EstimatedPoints ]
 
-> Will try to create Issue for more detailed info on the events on the story
+> Will try to create Issue for more detailed info on the events on the story - oops im on fork - ill add md
 
 #### Story #1 - scammed - 2/2 
 - [x] visualize the data thru creating a data.json (^)
@@ -62,15 +62,15 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 - [ ] edit in , text out
 - [x] show list to display
 
-#### Story #4 - the observers are comming - 0/4
-- [ ] colors
-- [ ] icons
-- [ ] outlines
-- [ ] panels (margins , paddings)
-- [ ] hovers
+#### Story #4 - the observers are comming - 2/4
+- [x] colors
+- [x] icons
+- [x] outlines
+- [x] panels (margins , paddings)
+- [x] hovers
 - [x] accordions
 
-#### Side Story 1 - 2/2 > wheres the issue tag ? whats the result ?
+#### Side Story 1 - 2/2+2
 - [x] edit in , text out
 - [x] accordions 
 

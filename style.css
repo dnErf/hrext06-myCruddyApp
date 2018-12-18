@@ -6,12 +6,11 @@
 
 html {
   font-size: 62.50%;
-  height: 100%;
   font: 1.35rem 'Noto Sans', sans-serif;
+  height: 100%;
 }
 
 body {
-  min-height: 100%;
   height: 100%;
 }
 
@@ -19,9 +18,20 @@ br {
   clear: both;
 }
 
+a {
+  color: #4d394b;
+  font-size: .85rem;
+  text-decoration: none;
+}
+a:hover {
+  opacity: .7;
+}
+
+
 .ba {
   border: 1px solid gray;
 }
+
 .-btn {
   background: white;
   border: solid gray;
@@ -33,6 +43,19 @@ br {
 .-btn:hover {
   opacity: .8;
 }
+.-btn_i {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+.-btn_i:hover {
+  opacity: .7;
+}
+
+.-remove {
+  float: right;
+}
 
 .container {
   display: flex;
@@ -43,23 +66,55 @@ br {
 
 .content {
   /* height: 100%; */
+  background-color: white;
   width: 100%;
 }
 
+.-ctrl {
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+
 .-form {
+  margin-bottom: .5rem;
   padding: .5rem;
+
 }
 
 .-itxt {
   border: solid gray;
   padding: .35rem;
 }
-
-.-list {
-  height: 100%;
-  padding: .25rem;
+.-itxt:focus {
+  outline-color: black;
+}
+.-add {
+  margin-left: .5rem;
+  margin-right: .5rem;
+  width: 50%;
+}
+.-search {
+  margin-left: 1.3rem;
+  margin-right: .2rem;
 }
 
+.-list {
+  padding: .25rem;
+}
+.-list-header {
+  margin-right: .5rem;
+  vertical-align: middle;
+}
+
+.-item {
+  vertical-align: middle;
+  margin: .1rem .25rem;
+  padding: .35rem .7rem;
+  top: 0;
+}
+.-item:hover {
+  background-color: #f9f9f9;
+}
 .-item .-hidden {
   display: none;
 }
@@ -68,7 +123,18 @@ br {
   display: none;
 }
 
+.-desc_input {
+  width: 100%;
+}
+
 .menu {
+  background-color: #4d394b;
+  color: white;
   height: 100%;
+  width: 12.5rem;
   padding: 1rem;
+}
+
+.fr {
+  float: right;
 }
