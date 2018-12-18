@@ -71,8 +71,8 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 - [x] accordions
 
 #### Side Story 1 - 2/2+2
-- [x] edit in , text out
-- [x] accordions 
+- [x] [edit in , text out](https://github.com/dnErf/hrext06-myCruddyApp/blob/master/issues/edit_in-text_out.md)
+- [x] [accordions](https://github.com/dnErf/hrext06-myCruddyApp/blob/master/issues/accordions.md) 
 
 > if something need to happen but not happening.. theres only one need to be called..
 
