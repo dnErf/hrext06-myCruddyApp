@@ -30,7 +30,9 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 ### Next Sprints
 > (^) donotes that it can be expanded or add some feature on top of it
 
-> [ ActualPoints / EstimatedPoints ]
+> Story Points [ ActualPoints / EstimatedPoints ]
+
+> Will try to create Issue for more detailed info on the events on the story
 
 #### Story #1 - scammed - 2/2 
 - [x] visualize the data thru creating a data.json (^)
@@ -66,11 +68,11 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 - [ ] outlines
 - [ ] panels (margins , paddings)
 - [ ] hovers
-- [ ] accordions
+- [x] accordions
 
-#### Side Story 1
-- [ ] edit in , text out
-- [ ] accordions 
+#### Side Story 1 - 2/2 > wheres the issue tag ? whats the result ?
+- [x] edit in , text out
+- [x] accordions 
 
 > if something need to happen but not happening.. theres only one need to be called..
 

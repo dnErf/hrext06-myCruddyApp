@@ -60,6 +60,14 @@ br {
   padding: .25rem;
 }
 
+.-item .-hidden {
+  display: none;
+}
+
+.-desc .-describe {
+  display: none;
+}
+
 .menu {
   height: 100%;
   padding: 1rem;

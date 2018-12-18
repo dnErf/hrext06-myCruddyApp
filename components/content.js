@@ -36,10 +36,19 @@ var Content = (function Component(ctrl) {
     , $form_list = $(`<div class="-form -list ba">nothing</div>`)
     , $list_items = function(item,i) {
         $(`
-          <div class="-item ba" data-id="${i}">
-            <span class="-item -url">${item.url}</span>
-            <span class="-item -desc">${item.description}</span>
-            <button class="-btn -remove">[ x ]<button>
+          <div class="-item ba -open" data-id="${i}">
+            <button class="-btn -collapse">[ ^ ]</button>
+            <span class="-item -url"><a href="${item.url}" target="blank">${item.url}</a></span>
+            <button class="-btn -remove">[ x ]</button>
+            <div class="-item -desc -hidden ba">
+              <div class="desc_input">
+                <input type="text" class="-describe -itxt" placeholder="" />
+                <button class="-describe -btn">Save</button>
+              </div>
+              <span class="-desc_span">accordion</span>
+            </div>
+            
+            
           </div>
         `)
         .appendTo($form_list)
@@ -51,6 +60,20 @@ var Content = (function Component(ctrl) {
     e.preventDefault()
     ctrl.remove(e.target.parentElement.dataset.id)
     $(this).parent().remove()
+  })
+
+  $form_list.on('click','.-item .-collapse', function(e) {
+    e.preventDefault()
+    $(this).parent().find('.-desc').toggleClass('-hidden')
+  })
+
+  $form_list.on('click','.-desc .-desc_span', function(e) {
+    e.preventDefault()
+    // console.log(e)
+    // console.log(e.currentTarget.textContent)
+    $(this).hide()
+    $(this).parent().find('.-describe').val(e.currentTarget.textContent)
+    $(this).parent().find('.-describe').show()
   })
 
   $form_container
