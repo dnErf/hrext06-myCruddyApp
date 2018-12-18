@@ -1,6 +1,6 @@
 var Content = (function Component(ctrl) {
 
-  console.log(ctrl)
+  console.log(observer.redraw())
   const $content = $('<div class="content"></div>')
 
   let
@@ -25,7 +25,11 @@ var Content = (function Component(ctrl) {
           .keyup(function(e) {
             txtSearch = e.currentTarget.value
           }) ,
-          $(`<button class="-btn">Search</button>`) ,
+          $(`<button class="-btn">Search</button>`)
+          .click(function(e) {
+            e.preventDefault()
+            ctrl.test()
+          }) ,
           $(`<button class="-btn -clear">Clear</button>`)
           .click(function(e) {
             e.preventDefault()

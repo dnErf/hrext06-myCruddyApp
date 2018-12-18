@@ -10,6 +10,7 @@ var acm = (function(data,state) {
       model['hrext'].bookmarks.push(url)
       stringe = JSON.stringify(model)
       localStorage.setItem('H06',stringe)
+      
     } ,
     clear () {
       console.log(model['hrext'].bookmarks)
@@ -28,7 +29,26 @@ var acm = (function(data,state) {
       model['hrext'].bookmarks[idx].description = desc
       stringe = JSON.stringify(model)
       localStorage.setItem('H06', stringe)
-    }
-
+    } ,
   }
 }(Folders,State))
+
+var observer = (function Observer(c) {
+  const observee = {}
+  return {
+    observee ,
+    subscribe (obseen) {
+      observee[Object.keys(obseen)] = obseen[Object.keys(obseen)]
+    } ,
+    redraw () {
+      c.state.appBusy.map((v) => {
+        if (v) {
+          for (let obi in observee) {
+            observee[obi].fn(c)
+          }
+        }
+        return false
+      })
+    }
+  }
+}(acm))

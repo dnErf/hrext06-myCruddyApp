@@ -80,8 +80,13 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 
 > if something need to happen but not happening.. theres only one need to be called..
 
-#### Story #5 - observables! the obseen and the observees - 0/2
-- [ ] initialize ...
+#### Story #5 - observables! the obseen and the observees - 1/2
+- [x] initialize ...
+- [x] comming from the stream ... ( there's an issue with normal getter-setter, i need to use a stream , luckily i've just written a light-weight implementation of stream, although it is missing a merge before it can be publish, but it will do the job here.. )
+
+[light-weight stream and lense](https://github.com/dnErf/vdbx)
+
+- [ ] implementation after the side story 3
 
 #### Side Story 3 - 0/2
 - [ ] seperation of form and list
