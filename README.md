@@ -59,7 +59,7 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 - [x] adds
 - [x] inline remove
 - [x] clear
-- [ ] edit in , text out
+- [x] edit in , text out
 - [x] show list to display
 
 #### Story #4 - the observers are comming - 2/4
@@ -71,7 +71,7 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 - [x] hovers
 - [x] accordions
 
-#### Side Story 1 - 2/2+2
+#### Side Story 1 - 2+1 / 2+2
 - [x] [edit in , text out](https://github.com/dnErf/hrext06-myCruddyApp/blob/master/issues/edit_in-text_out.md)
 - [x] [accordions](https://github.com/dnErf/hrext06-myCruddyApp/blob/master/issues/accordions.md) 
 

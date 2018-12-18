@@ -23,6 +23,12 @@ var acm = (function(data,state) {
       })
       stringe = JSON.stringify(model)
       localStorage.setItem('H06', stringe)
+    } ,
+    edit (idx, desc) {
+      model['hrext'].bookmarks[idx].description = desc
+      stringe = JSON.stringify(model)
+      localStorage.setItem('H06', stringe)
     }
+
   }
 }(Folders,State))

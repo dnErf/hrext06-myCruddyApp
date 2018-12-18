@@ -41,11 +41,11 @@ var Content = (function Component(ctrl) {
             <span class="-url"><a href="${item.url}" target="blank">${item.url}</a></span>
             <span class="-btn_i -remove"><i class="fas fa-trash-alt"></i></span>
             <div class="-item -desc -hidden">
-              <div class="-desc_input">
+              <div class="-desc_input" data-id="${i}">
                 <input type="text" class="-describe -itxt" placeholder="" />
                 <button class="-describe -btn fr">Save</button>
               </div>
-              <span class="-desc_span">accordion</span>
+              <span class="-desc_span">${item.description ? item.description : 'Add Description'}</span>
             </div>
           </div>
         `)
@@ -63,23 +63,49 @@ var Content = (function Component(ctrl) {
       $(this).parent().remove()
     })
     .on('click','.-item .-collapse', function(e) {
+
       e.preventDefault()
-      $(this).parent().find('.-desc').toggleClass('-hidden')
+
+      let 
+        $desc = $(this).parent().find('.-desc')
+        $fas = $(this).find('.fas')
+
+      $desc.toggleClass('-hidden')
+
+      if ($fas.hasClass('fa-chevron-circle-right')) {
+        $fas.removeClass('fa-chevron-circle-right')
+        $fas.addClass('fa-chevron-circle-down')
+      }
+      else {
+        $fas.removeClass('fa-chevron-circle-down')
+        $fas.addClass('fa-chevron-circle-right')
+      }
+
     })
     .on('click','.-desc .-desc_span', function(e) {
-
-      // edit in text out
-      // how to save this
-      // not active event? i forgot lol .
-
-      e.preventDefault()
-      // console.log(e)
-      // console.log(e.currentTarget.textContent)
       $(this).hide()
       $(this).parent().find('.-describe').val(e.currentTarget.textContent)
       $(this).parent().find('.-describe').show()
-
     })
+    .on('click','.-desc .-btn', desc_io_event)
+    .on('blur','.-desc .-itxt', desc_io_event)
+
+  function desc_io_event (e) {
+
+    let
+      $desc = $(this).parent().find('.-describe')
+      $desc_span = $(this).parent().parent().find('.-desc_span')
+      $desc_input = $(this).parent().find('.-itxt')
+
+    ctrl.edit(e.target.parentElement.dataset.id , $desc_input.val())
+
+    $desc.hide()
+    $desc_span.text($desc_input.val())
+    $desc_span.show()
+
+    // if ($(this).parent().find('.-itxt').is(':visible')) { console.log('clicked') }
+
+  }
 
   $form_container
       .append($form_controls)

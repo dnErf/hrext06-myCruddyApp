@@ -1,4 +1,3 @@
 #### edit in , text out
-- [ ] not changing back to span on visited
-- [ ] finilize the looks
-- [ ] how it will flow the data
+- [x] not changing back to span on visited
+- [x] how it will flow the data
