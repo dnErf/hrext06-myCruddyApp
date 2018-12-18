@@ -65,6 +65,7 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 #### Story #4 - the observers are comming - 2/4
 - [x] colors
 - [x] icons
+    - [x] font-awesomes
 - [x] outlines
 - [x] panels (margins , paddings)
 - [x] hovers
@@ -79,9 +80,15 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 
 > if something need to happen but not happening.. theres only one need to be called..
 
-#### Story #5 - oberservables! the obseen and the observee - 0/2
+#### Story #5 - observables! the obseen and the observees - 0/2
 - [ ] initialize ...
 
 #### Story #? - scam got assert by mocha and chai ... - 0/4
 
 #### Story #? - browser history of the slug ... - 0/8
+
+#### Story #? - mobile animate cs ... - 0/2
+
+#### Story #? - whos your host ? ... repl ? git ? - 0/2
+
+#### Story #? - scam on multi-universe ! - 0/4
