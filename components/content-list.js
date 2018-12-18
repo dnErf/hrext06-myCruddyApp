@@ -32,8 +32,7 @@ var ContentList = (function Component(ctrl) {
   $form_list
     .on('click','.-item .-remove', function(e) {
       e.preventDefault()
-      e.stopPropagation()
-      ctrl.remove(e.target.parentElement.dataset.id)
+      ctrl.remove(e.target.parentElement.parentElement.dataset.id)
       $(this).parent().remove()
     })
     .on('click','.-item .-collapse', function(e) {

@@ -22,7 +22,7 @@ var acm = (function(data,state) {
     } ,
     remove (idx) {
       model['hrext'].bookmarks = model['hrext'].bookmarks.filter((_,i)=>{
-        return (!i === idx)
+        return !(i === Number(idx))
       })
       updateLocalStorage()
     } ,
@@ -41,9 +41,6 @@ var observer = (function Observer(c) {
   c.state.appBusy.map((v) => {
     if (v) {
       for (let obi in observee) {
-        
-        // console.log(observee[obi].view.children().detach())
-        // observee[obi].view
         observee[obi].fn(c)
       }
     }

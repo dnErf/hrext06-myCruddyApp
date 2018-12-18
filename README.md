@@ -91,8 +91,8 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 #### Side Story 3 - 1/2
 - [x] seperation of form and list
 
-#### Side Story 4 - 0/2
-- [ ] remove on leaks!
+#### Side Story 4 - 1/2
+- [x] remove on leaks!
 
 #### Story #? - scam got assert by mocha and chai ... - 0/4
 
