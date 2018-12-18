@@ -13,3 +13,5 @@ var State = (function() {
     appBusy : abc
   }
 }())
+
+var $content = $('<div class="content"></div>')

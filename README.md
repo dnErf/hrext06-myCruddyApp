@@ -41,7 +41,7 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
     - [x] app global state declaration (isReady,Updated)
     - [x] generate action thru what we can do on the data (this is what scam is really about)
     - [x] encasulate our form and dispatch the generated action controlled model
-    - [ ] make an observer (^)
+    - [x] make an observer (^)
     
 
 #### Story #2 - framed - 1/2
@@ -86,13 +86,17 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 
 [light-weight stream and lense](https://github.com/dnErf/vdbx)
 
-- [ ] implementation after the side story 3
+- [x] implementation after the side story 3
 
 #### Side Story 3 - 1/2
 - [x] seperation of form and list
 
 #### Side Story 4 - 1/2
 - [x] remove on leaks!
+
+
+#### Story End - thinking of writing the merge and other stuff ...
+
 
 #### Story #? - scam got assert by mocha and chai ... - 0/4
 

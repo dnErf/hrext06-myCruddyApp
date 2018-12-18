@@ -41,7 +41,9 @@ var observer = (function Observer(c) {
   c.state.appBusy.map((v) => {
     if (v) {
       for (let obi in observee) {
+        observee[obi].view.remove()
         observee[obi].fn(c)
+        $content.append(observee[obi].view)
       }
     }
     return false

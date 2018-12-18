@@ -3,7 +3,6 @@ var ContentList = (function Component(ctrl) {
   const $form_list = $(`<div class="dsply- -list"></div>`)
 
   $form_list.empty()
-  $form_list.html('')
 
   let
     { bookmarks } = ctrl.model
@@ -22,7 +21,7 @@ var ContentList = (function Component(ctrl) {
             </div>
           </div>
         `)
-        .appendTo($form_list)
+        .prependTo($form_list)
       }
   
   // fetch data from the array bookmarks then apply it to the $list_items
