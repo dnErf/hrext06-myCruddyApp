@@ -12,13 +12,13 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 
 ### Required Features
 - [x] Edit local storage
-    - [ ] What about if we have more than one value?
-    - [ ] how do we add multiple values?
-        - [ ] maybe use an array?
+    - [x] What about if we have more than one value?
+    - [x] how do we add multiple values?
+        - [x] maybe use an array?
         - [ ] maybe use multiple keys? create new keyname each time
 - [x] Delete local storage
     - [x] delete button storage.removeItem()
-    - [ ] delete all storage.clear()
+    - [x] delete all storage.clear()
 
 ### Main Feature
 - [x] This App is about making bookmarks, todo list and notes
@@ -28,7 +28,7 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 - [ ] Hosting it on repl.it (html,css, js)
 
 ### Next Sprints
-> (^) donotes that it can be expanded or add some feature on top of it
+> (^) donotes that it can be expanded / add some feature on top of it / to be done later on
 
 > Story Points [ ActualPoints / EstimatedPoints ]
 
@@ -55,7 +55,7 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
     - [ ] media queries digout fresh from spectre css (^)
 
 #### Story #3 - something something - 1/4
-- [x] something need to happen . so what's gonna happen and happening
+- [x] something need to happen . so what's gonna happen ? is it happening now ?
 - [x] adds
 - [x] inline remove
 - [x] clear
@@ -76,4 +76,8 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 
 > if something need to happen but not happening.. theres only one need to be called..
 
-#### Story #5 - the oberservables! - 0/2
+#### Story #5 - oberservables! the obseen and the observee - 0/2
+
+#### Story #? - scam got assert by mocha and chai ... - 0/4
+
+#### Story #? - browser history of the slug ... - 0/8
