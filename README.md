@@ -75,13 +75,16 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 - [x] [edit in , text out](https://github.com/dnErf/hrext06-myCruddyApp/blob/master/issues/edit_in-text_out.md)
 - [x] [accordions](https://github.com/dnErf/hrext06-myCruddyApp/blob/master/issues/accordions.md) 
 
-#### Side Story 2 - 0/2
-- [ ] story #4 happened so class are messy - re-BEM?
+#### Side Story 2 - 1/2
+- [x] story #4 happened so class are messy - re-BEM?
 
 > if something need to happen but not happening.. theres only one need to be called..
 
 #### Story #5 - observables! the obseen and the observees - 0/2
 - [ ] initialize ...
+
+#### Side Story 3 - 0/2
+- [ ] seperation of form and list
 
 #### Story #? - scam got assert by mocha and chai ... - 0/4
 

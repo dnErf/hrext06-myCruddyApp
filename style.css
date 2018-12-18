@@ -27,6 +27,7 @@ a:hover {
   opacity: .7;
 }
 
+/* modifiers and global elements */
 
 .ba {
   border: 1px solid gray;
@@ -53,9 +54,19 @@ a:hover {
   opacity: .7;
 }
 
-.-remove {
+.fr {
   float: right;
 }
+
+.-itxt {
+  border: solid gray;
+  padding: .35rem;
+}
+.-itxt:focus {
+  outline-color: black;
+}
+
+/* component style */
 
 .container {
   display: flex;
@@ -69,61 +80,48 @@ a:hover {
   background-color: white;
   width: 100%;
 }
-
-.-ctrl {
-  /* display: flex; */
-  /* justify-content: space-between; */
+.content .-header {
+  margin-left: .5rem;
+  margin-right: .5rem;
+  vertical-align: middle;
 }
-
-.-form {
+.content .-form {
   margin-bottom: .5rem;
   padding: .5rem;
-
+}
+.content .-list {
+  padding: .25rem;
 }
 
-.-itxt {
-  border: solid gray;
-  padding: .35rem;
-}
-.-itxt:focus {
-  outline-color: black;
-}
-.-add {
+.ctrl- .-add {
   margin-left: .5rem;
   margin-right: .5rem;
   width: 50%;
 }
-.-search {
+.ctrl- .-search {
   margin-left: 1.3rem;
   margin-right: .2rem;
 }
 
-.-list {
-  padding: .25rem;
-}
-.-list-header {
-  margin-right: .5rem;
-  vertical-align: middle;
-}
-
-.-item {
+.dsply- .-item {
   vertical-align: middle;
   margin: .1rem .25rem;
   padding: .35rem .7rem;
   top: 0;
 }
-.-item:hover {
+.dsply- .-item:hover {
   background-color: #f9f9f9;
 }
-.-item .-hidden {
+.dsply- .-item .-hidden {
   display: none;
 }
-
-.-desc .-describe {
+.dsply- .-remove {
+  float: right;
+}
+.dsply- .-desc .-describe {
   display: none;
 }
-
-.-desc_input {
+.dsply- .-desc_input {
   width: 100%;
 }
 
@@ -135,6 +133,3 @@ a:hover {
   padding: 1rem;
 }
 
-.fr {
-  float: right;
-}

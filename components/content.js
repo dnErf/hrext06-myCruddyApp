@@ -6,14 +6,14 @@ var Content = (function Component(ctrl) {
   let
     { bookmarks } = ctrl.model 
     , txtUrl = '' , txtSearch = '' 
-    , $form_container = $(`<div class="-form -ctrl ba"><span class="-ctrl -list-header">Bookmarks</span></div>`)
+    , $form_container = $(`<div class="ctrl- -form ba"><span class="-header">Bookmarks</span></div>`)
     , $form_controls = (function() {
         return ([
-          $(`<input type="text" class="-ctrl -add -itxt" placeholder="url..." />`)
+          $(`<input type="text" class="-add -itxt" placeholder="url..." />`)
           .keyup(function(e) {
             txtUrl = e.currentTarget.value
           }) ,
-          $(`<span class="-ctrl -btn_i"><i class="fas fa-plus-circle"></i></span>`)
+          $(`<span class="-btn_i"><i class="fas fa-plus-circle"></i></span>`)
           .click(function(e) {
             e.preventDefault()
             ctrl.add({
@@ -21,24 +21,24 @@ var Content = (function Component(ctrl) {
               description : ''
             })
           }) ,
-          $(`<input type="text" class="-ctrl -search -itxt" placeholder="search..." />`)
+          $(`<input type="text" class="-search -itxt" placeholder="search..." />`)
           .keyup(function(e) {
             txtSearch = e.currentTarget.value
           }) ,
-          $(`<button class="-ctrl -btn">Search</button>`) ,
-          $(`<button class="-ctrl -btn -clear">Clear</button>`)
+          $(`<button class="-btn">Search</button>`) ,
+          $(`<button class="-btn -clear">Clear</button>`)
           .click(function(e) {
             e.preventDefault()
             ctrl.clear()
           })
         ])
       })  
-    , $form_list = $(`<div class="-form -list"></div>`)
+    , $form_list = $(`<div class="dsply- -list"></div>`)
     , $list_items = function(item,i) {
         $(`
           <div class="-item ba -open" data-id="${i}">
             <span class="-btn_i -collapse"><i class="fas fa-chevron-circle-right"></i></span>
-            <span class="-item -url"><a href="${item.url}" target="blank">${item.url}</a></span>
+            <span class="-url"><a href="${item.url}" target="blank">${item.url}</a></span>
             <span class="-btn_i -remove"><i class="fas fa-trash-alt"></i></span>
             <div class="-item -desc -hidden">
               <div class="-desc_input">
