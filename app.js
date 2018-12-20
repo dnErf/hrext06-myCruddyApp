@@ -30,5 +30,4 @@ $(document).ready(function(){
     .append(Menu.view)
     .append($content)
     
-
 });

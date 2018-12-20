@@ -98,7 +98,7 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 - [x] reload on clear
 
 
-#### Story End - thinking of writing the merge and other stuff ...
+#### Story End - thinking of writing and other stuff ...
 
 
 #### Story #? - scam got assert by mocha and chai ... - 0/4

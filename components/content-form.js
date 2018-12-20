@@ -34,7 +34,6 @@ var ContentForm = (function Component(ctrl) {
           })
         ])
       })  
-    
 
   $form
     .append($form_controls)

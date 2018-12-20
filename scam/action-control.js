@@ -1,6 +1,7 @@
 var acm = (function(data,state) {
   // receives the data and state then formulate the action that we will dispatch
   const model = data()
+  
   let 
     stringe = ''
     , updateLocalStorage = function() {
@@ -35,6 +36,7 @@ var acm = (function(data,state) {
       state.appBusy(true)
     }
   }
+
 }(Folders,State))
 
 var observer = (function Observer(c) {
