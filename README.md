@@ -94,6 +94,9 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 #### Side Story 4 - 1/2
 - [x] remove on leaks!
 
+#### Side Story 5 - 1/2
+- [x] reload on clear
+
 
 #### Story End - thinking of writing the merge and other stuff ...
 

@@ -19,6 +19,7 @@ var acm = (function(data,state) {
     clear () {
       model['hrext'].bookmarks = []
       updateLocalStorage()
+      state.appBusy(true)
     } ,
     remove (idx) {
       model['hrext'].bookmarks = model['hrext'].bookmarks.filter((_,i)=>{
@@ -38,6 +39,7 @@ var acm = (function(data,state) {
 
 var observer = (function Observer(c) {
   const observee = {}
+  console.log(c.state.appBusy())
   c.state.appBusy.map((v) => {
     if (v) {
       for (let obi in observee) {
