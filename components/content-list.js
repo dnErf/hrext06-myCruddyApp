@@ -14,7 +14,7 @@ var ContentList = (function Component(ctrl) {
             <span class="-btn_i -remove"><i class="fas fa-trash-alt"></i></span>
             <div class="-item -desc -hidden">
               <div class="-desc_input" data-id="${i}">
-                <input type="text" class="-describe -itxt" placeholder="" />
+                <textarea class="-describe -itxtarea" placeholder="" />
                 <button class="-describe -btn fr">Save</button>
               </div>
               <span class="-desc_span">${item.description ? item.description : 'Add Description'}</span>
@@ -60,19 +60,19 @@ var ContentList = (function Component(ctrl) {
       $(this).parent().find('.-describe').show()
     })
     .on('click','.-desc .-btn', desc_io_event)
-    .on('blur','.-desc .-itxt', desc_io_event)
+    .on('blur','.-desc .-itxtarea', desc_io_event)
 
   function desc_io_event (e) {
 
     let
       $desc = $(this).parent().find('.-describe')
       $desc_span = $(this).parent().parent().find('.-desc_span')
-      $desc_input = $(this).parent().find('.-itxt')
+      $desc_input = $(this).parent().find('.-itxtarea')
 
     ctrl.edit(e.target.parentElement.dataset.id , $desc_input.val())
 
     $desc.hide()
-    $desc_span.text($desc_input.val())
+    $desc_span.html($desc_input.val())
     $desc_span.show()
 
     // if ($(this).parent().find('.-itxt').is(':visible')) { console.log('clicked') }

@@ -65,7 +65,15 @@ a:hover {
 .-itxt:focus {
   outline-color: black;
 }
-
+.-itxtarea {
+  border: solid gray;
+  padding: .35rem;
+  width: 80%;
+  white-space: pre-wrap;
+}
+.-itxtarea:focus {
+  outline-color: black;
+}
 /* component style */
 
 .container {
@@ -127,6 +135,9 @@ a:hover {
 }
 .dsply- .-desc_input {
   width: 100%;
+}
+.-desc_span {
+  white-space: pre-wrap;
 }
 
 .menu {
