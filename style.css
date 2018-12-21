@@ -118,6 +118,10 @@ a:hover {
 .dsply- .-remove {
   float: right;
 }
+
+.dsply- .-desc {
+  background-color: #f9f9f9;
+}
 .dsply- .-desc .-describe {
   display: none;
 }
@@ -133,3 +137,6 @@ a:hover {
   padding: 1rem;
 }
 
+.menu .-header {
+  cursor: pointer;
+}

@@ -21,11 +21,21 @@ var ContentForm = (function Component(ctrl) {
           $(`<input type="text" class="-search -itxt" placeholder="search..." />`)
           .keyup(function(e) {
             txtSearch = e.currentTarget.value
+            if(txtSearch.length>5) {
+              e.preventDefault()
+              ctrl.search(txtSearch)
+            }
+          })
+          .blur(function(e) {
+            if (e.currentTarget.value.length === 0 && txtSearch.length === 0) {
+              e.preventDefault()
+              ctrl.reset()
+            }
           }) ,
           $(`<button class="-btn">Search</button>`)
           .click(function(e) {
             e.preventDefault()
-            ctrl.test()
+            ctrl.search(txtSearch)
           }) ,
           $(`<button class="-btn -clear">Clear</button>`)
           .click(function(e) {

@@ -97,9 +97,14 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 #### Side Story 5 - 1/2
 - [x] reload on clear
 
+#### Story #6 - lost and found - 1/2
+- [x] search
+- [x] reset
+
+#### known issue
+- [ ] setup incorrectly the font size on global . tried it on different framework and it was not supposed to be setup there.. styling needs to be checked again after all the functionality has been implemented..
 
 #### Story End - thinking of writing and other stuff ...
-
 
 #### Story #? - scam got assert by mocha and chai ... - 0/4
 

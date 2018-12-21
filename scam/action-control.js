@@ -1,6 +1,6 @@
 var acm = (function(data,state) {
   // receives the data and state then formulate the action that we will dispatch
-  const model = data()
+  let model = data()
   
   let 
     stringe = ''
@@ -31,6 +31,18 @@ var acm = (function(data,state) {
     edit (idx, desc) {
       model['hrext'].bookmarks[idx].description = desc
       updateLocalStorage()
+    } ,
+    search (term)  {
+      // console.log(term)
+      model['hrext'].bookmarks = model['hrext'].bookmarks.filter((value) => {
+        return String(value.url).includes(term)
+      })
+      state.appBusy(true)
+    } ,
+    reset () {
+      model = data()
+      this.model = model['hrext']
+      state.appBusy(true)
     } ,
     test() {
       state.appBusy(true)
